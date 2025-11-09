@@ -1058,49 +1058,36 @@ body {
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-/* --- Contenedor de Botones de Idioma --- */
-.botones-idioma {
-    /* Utiliza Flexbox para colocar los botones uno al lado del otro */
-    display: flex;
-    /* Centra los botones horizontalmente en el modal */
-    justify-content: center;
-    /* Añade espacio superior para separarlo del texto "Скоро..." */
-    margin-top: 20px;
-    gap: 15px; /* Espacio entre los dos botones */
-}
-
-/* Estilo para el nuevo botón "Cerrar" */
-.botones-idioma .cerrar-btn {
-    /* Reutiliza el estilo base del botón de Cerrar */
-    background-color: #dc3545; /* Color rojo para cerrar */
+button[data-key="cambiar_idioma_btn"] {
+    background-color: goldenrod;
     color: white;
-    padding: 10px 20px;
+    padding: 1vh;
     border: none;
-    border-radius: 5px;
+    border-radius: 1vh;
     cursor: pointer;
-    font-size: 1.1em;
+    font-size: 1.5vh;
     transition: background-color 0.3s;
-    width: auto; /* Permite que el ancho se ajuste al contenido */
+    width: auto;
+    margin: 1vh;
 }
 
-.botones-idioma .cerrar-btn:hover {
-    background-color: #c82333;
+button[data-key="cambiar_idioma_btn"]:hover {
+    background-color: rgb(172, 130, 24);
 }
 
-/* Estilo para el botón original "Cambiar Idioma" */
-/* Lo hacemos un poco más específico para asegurar que se comporte como un botón al lado del de Cerrar */
-.botones-idioma button[data-key="cambiar_idioma_btn"] {
-    background-color: #007bff; /* Color azul para cambiar idioma */
+button[data-key="cerrar_modal_idioma"] {
+    background-color: darkred;
     color: white;
-    padding: 10px 20px;
+    padding: 1vh;
     border: none;
-    border-radius: 5px;
+    border-radius: 1vh;
     cursor: pointer;
-    font-size: 1.1em;
+    font-size: 1.5vh;
     transition: background-color 0.3s;
-    width: auto; /* Permite que el ancho se ajuste al contenido */
+    width: auto;
+    margin: 1vh;
 }
 
-.botones-idioma button[data-key="cambiar_idioma_btn"]:hover {
-    background-color: #0056b3;
+button[data-key="cerrar_modal_idioma"]:hover {
+    background-color: rgb(87, 2, 2);
 }
